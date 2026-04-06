@@ -7,7 +7,23 @@
     <title>Document</title>
 </head>
 <body>
-    <button onclick="oi()">Dê oi para o mundo!</button>
-    <script src="./scripts.js"></script>
+    <h1 style="text-align: center;"><strong>Secret Number game</strong></h1>
+    <h2><strong>Try guessing the secret number from 1 to 100!</strong></h2>
+    <script></script>
+    <input id="inputNumero"type="number">
+
+    <button onclick="valorChute()">Guess</button>
+    <div id="janelaSeAcertou"></div>
+    <p>Tries: <p id="tentativas">0</p> </p>
+    <script type="module">
+        import {exibirTentativas, valorChute} from "./scripts.js";
+        import {incrementarTentativas} from "./game.js";
+
+        window.exibirTentativas = exibirTentativas;
+        window.incrementarTentativas = incrementarTentativas;
+        window.valorChute = valorChute;
+    </script>
 </body>
 </html>
+
+<!-- gerar um número aleatório, depois de criar o número aleatório, o usuário tem que informar o número e o programa tem que identificar se o número é maior ou menor e depois dar uma dica, e quando ele acertar, deve mostrar quantas tentativas ele fez--> 
