@@ -1,7 +1,6 @@
 import { resetarJogo, getTentativas, incrementarTentativas, resultadoDoChute} from "./game.js"
 
 //scripts do site
-var tentativas = getTentativas()
 export function exibirTentativas() {
     const tentativas = document.getElementById("tentativas");
     tentativas.innerText = getTentativas();
