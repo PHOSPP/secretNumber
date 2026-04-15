@@ -10,10 +10,6 @@ export function gerarNumeroSecreto() {
     return numeroSecreto;
 }
 
-export function getNumeroSecreto() {
-    return numeroSecreto;
-}
-
 export function incrementarTentativas() {
     tentativas++;
 }

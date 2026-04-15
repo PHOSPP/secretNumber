@@ -1,4 +1,4 @@
-import { resetarJogo, getTentativas, incrementarTentativas, resultadoDoChute, getNumeroSecreto } from "./game.js"
+import { resetarJogo, getTentativas, incrementarTentativas, resultadoDoChute} from "./game.js"
 
 //scripts do site
 var tentativas = getTentativas()
