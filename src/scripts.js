@@ -31,7 +31,6 @@ export function tratarSaida(resultado) {
     else {
         incrementarTentativas();
         exibirTentativas()
-        console.log(tentativas)
         document.getElementById("janelaSeAcertou").innerText = ("Try guessing lower!")     
     } 
         
