@@ -5,15 +5,20 @@
 var tentativas = 0;
 var numeroSecreto = 0;
 
-export function mudarNumeroSecreto() {
-    Math.floor(Math.random()*100)+1;
+export function gerarNumeroSecreto() {
+    numeroSecreto = Math.floor(Math.random()*100)+1;
+    return numeroSecreto;
+}
+
+export function getNumeroSecreto() {
+    return numeroSecreto;
 }
 
 export function incrementarTentativas() {
     tentativas++;
 }
 
-export function resetarJogo() {
+export function resetarTentativas() {
     tentativas = 0;
 }
 
@@ -21,16 +26,20 @@ export function getTentativas() {
     return tentativas;
 }   
 
-//TODO buscar um nome melhor para a função 
-export function verificarValor(chute) {
-    if (numeroSecreto == chute) {
-        return 1
+export function resultadoDoChute(chute) {
+    if (numeroSecreto === chute) {
+        return 1;
     }
     else if (numeroSecreto > chute) {
-        return 2
+        return 2;
     }
     else {
-        return 3
+        return 3;
     } 
     
+}
+
+export function resetarJogo() {
+    resetarTentativas()
+    gerarNumeroSecreto()
 }

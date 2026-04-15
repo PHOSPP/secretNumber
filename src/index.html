@@ -11,17 +11,20 @@
     <h2><strong>Try guessing the secret number from 1 to 100!</strong></h2>
     <script></script>
     <input id="inputNumero"type="number">
-
     <button onclick="valorChute()">Guess</button>
     <div id="janelaSeAcertou"></div>
     <p>Tries: <p id="tentativas">0</p> </p>
+    <button onclick="restart()">Restart</button>
     <script type="module">
-        import {exibirTentativas, valorChute} from "./scripts.js";
-        import {incrementarTentativas} from "./game.js";
+        import {exibirTentativas, valorChute, restart} from "./scripts.js";
+        import {incrementarTentativas, gerarNumeroSecreto} from "./game.js";
 
+        window.restart = restart;
         window.exibirTentativas = exibirTentativas;
         window.incrementarTentativas = incrementarTentativas;
         window.valorChute = valorChute;
+
+        gerarNumeroSecreto();
     </script>
 </body>
 </html>
