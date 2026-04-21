@@ -12,8 +12,8 @@
     <input id="inputNumero"type="number">
     <button onclick="valorChute()">Guess</button>
     <div id="janelaSeAcertou"></div>
-    <p>Tries: <p id="tentativas">0</p> </p>
-    <button onclick="restart()">Restart</button>
+    <p>Tries: <p id="tentativas">0</p> 
+    <button id="restartButton" onclick="restart()">Restart</button>
     <script type="module">
         import {valorChute, restart} from "./scripts.js";
         import {gerarNumeroSecreto} from "./game.js";
