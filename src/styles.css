@@ -1,0 +1,53 @@
+body {
+    background-color: #4412ff;
+}
+button {
+    border-color: black;
+    border-style: double;
+    border-radius: 40px;
+}
+
+input {
+    text-align: right;
+    border-radius: 40px;
+    border-style: groove;
+    margin: 10px;
+}
+
+p {
+    color: white;
+    max-width: fit-content;
+    max-height: fit-content;
+    border-style: inset;
+    border-color: black;
+    border-radius: 40px;
+    background-color: black;
+    padding: 3px;
+    margin: 0 auto;
+}
+
+h2{
+    text-align: center;
+    border-bottom: 2px inset black;
+    max-width: fit-content;
+    margin: 0 auto;
+}
+
+div {
+    max-width: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    border-style: inset;
+    border-radius: 40px;
+    border-color: black;
+    background-color: white;
+    padding: 3px;
+}
+
+#restartButton {
+    background-color: red;
+    margin: 10px;
+}

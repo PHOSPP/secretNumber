@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" src="./styles.css">
+    <link rel="stylesheet" href="./styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <button onclick="oi()">Dê oi para o mundo!</button>
-    <script src="./scripts.js"></script>
+    <h1 style="text-align: center;"><strong>Secret Number game</strong></h1>
+    <h2><strong>Try guessing the secret number from 1 to 100!</strong></h2>
+    <input id="inputNumero"type="number">
+    <button onclick="valorChute()">Guess</button>
+    <div id="janelaSeAcertou"></div>
+    <p>Tries: <p id="tentativas">0</p> 
+    <button id="restartButton" onclick="restart()">Restart</button>
+    <script type="module">
+        import {valorChute, restart} from "./scripts.js";
+        import {gerarNumeroSecreto} from "./game.js";
+
+        window.restart = restart;
+        window.valorChute = valorChute;
+
+        gerarNumeroSecreto();
+    </script>
 </body>
 </html>
+
+<!-- gerar um número aleatório, depois de criar o número aleatório, o usuário tem que informar o número e o programa tem que identificar se o número é maior ou menor e depois dar uma dica, e quando ele acertar, deve mostrar quantas tentativas ele fez--> 
