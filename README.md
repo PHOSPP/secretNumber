@@ -4,3 +4,11 @@ This project is an interactive choice-based game developed using HTML, CSS, and 
 
 ## OBJECTIVES
 Learn how to use HTML, CSS, JS, Github and Git
+
+## FEATURES
+- Random integer number generation
+- Guess tip
+- Infinite game loop
+
+## TODO
+- [ ] Better interface
