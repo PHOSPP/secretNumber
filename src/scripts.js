@@ -19,8 +19,8 @@ export function valorChute() {
 }
 
 export function tratarSaida(resultado) {
-    const msgDiv = document.getElementById("janelaSeAcertou");
-    msgDiv.style.display = "block";
+    const mensagem = document.getElementById("janelaSeAcertou");
+    mensagem.style.display = "block";
     if (resultado == 1) {
         document.getElementById("janelaSeAcertou").innerText = ("Congratulations! You guessed the number!")
     }
@@ -41,7 +41,7 @@ export function restart() {
     resetarJogo();
     exibirTentativas();
     document.getElementById("inputNumero").value = "";
-    const msgDiv = document.getElementById("janelaSeAcertou");
-    msgDiv.innerText = "";
-    msgDiv.style.display = "none";
+    const mensagem = document.getElementById("janelaSeAcertou");
+    mensagem.innerText = "";
+    mensagem.style.display = "none";
 }
